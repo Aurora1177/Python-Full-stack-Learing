@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M07 性能与高并发</title><link rel="stylesheet" href="../styles.css"><script src="../difficulty.js" defer></script></head><body><main>
+<nav><a href="06-integration-security.html">← 上一章</a><a href="../index.html">返回总览</a><a href="08-distributed.html">下一章 →</a></nav>
+<h1>M07 性能与高并发</h1><p class="subtitle">目标：从测量和容量出发优化系统，并在过载与依赖故障时保护核心服务。</p>
+<div class="notice"><strong>章节状态：</strong><span class="tag">未开始 · 0/10</span><p class="meta">前置建议：M02、M03、M04</p></div>
+<h2>核心问题</h2><ol class="questions">
+<li class="question" id="m07-q01"><h3>延迟、吞吐、并发和资源利用率有什么关系？</h3><p>能否区分平均值与分位数，并用 Little's Law 等基本关系做容量推断？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q02"><h3>性能优化为什么必须先测量？</h3><p>能否建立基线，用 profiler、指标和火焰图找到瓶颈，并验证改动而非凭感觉优化？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q03"><h3>服务的并发模型如何限制吞吐？</h3><p>能否分析 worker、线程、协程、连接池、队列和下游容量之间的约束？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q04"><h3>如何设计可信的负载测试？</h3><p>能否构造真实流量分布、预热、阶梯加压和失败判据，避免协调遗漏与测试端瓶颈？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q05"><h3>限流、并发限制与背压分别保护什么？</h3><p>能否选择令牌桶/漏桶或队列上限，并给客户端明确重试信号？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q06"><h3>超时、重试、熔断和降级如何配合？</h3><p>能否设置逐层时间预算、抖动退避和失败阈值，避免故障放大与重试风暴？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q07"><h3>热点数据或热点接口怎样处理？</h3><p>能否识别倾斜来源，并选择缓存、合并请求、预计算、分片或业务降级？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q08"><h3>Python 服务的 CPU 与内存问题如何定位？</h3><p>能否发现阻塞、泄漏、对象增长、序列化成本和 GC 影响，并选择进程或原生优化边界？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q09"><h3>容量规划需要哪些输入和余量？</h3><p>能否结合峰值、增长、单实例能力、依赖限制、故障冗余和成本估算资源？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m07-q10"><h3>线上突发延迟升高时如何止损和定位？</h3><p>能否先保护用户与数据，再按变更、流量、资源和依赖逐层缩小根因？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+</ol><h2>本章学习记录</h2><table><thead><tr><th>日期</th><th>问题</th><th>学到的内容与证据</th><th>遗留疑问</th></tr></thead><tbody><tr><td colspan="4">暂无记录。</td></tr></tbody></table>
+</main></body></html>

@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M04 缓存与消息队列</title><link rel="stylesheet" href="../styles.css"><script src="../difficulty.js" defer></script></head><body><main>
+<nav><a href="03-database.html">← 上一章</a><a href="../index.html">返回总览</a><a href="05-react.html">下一章 →</a></nav>
+<h1>M04 缓存与消息队列</h1><p class="subtitle">目标：在真正需要时使用中间件，并能处理它带来的一致性与可靠性问题。</p>
+<div class="notice"><strong>章节状态：</strong><span class="tag">未开始 · 0/10</span><p class="meta">前置建议：M02、M03</p></div>
+<h2>核心问题</h2><ol class="questions">
+<li class="question" id="m04-q01"><h3>什么数据值得缓存，什么数据不该缓存？</h3><p>能否从读写比、计算成本、时效性、命中率和一致性成本判断，而非默认加缓存？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q02"><h3>Cache Aside 如何工作并保持最终一致？</h3><p>能否处理读写竞态、失效顺序、TTL、双删局限和数据库失败场景？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q03"><h3>缓存穿透、击穿和雪崩分别是什么？</h3><p>能否根据根因选择空值缓存、布隆过滤、互斥重建、随机 TTL 或限流？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q04"><h3>Redis 的数据结构如何匹配业务问题？</h3><p>能否正确选择 String、Hash、Set、Sorted Set、Stream，并估算内存与复杂度？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q05"><h3>Redis 中的原子性与分布式锁如何实现？</h3><p>能否使用原子命令或脚本，正确设置持有者和过期时间，并说明锁失效边界？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q06"><h3>消息队列适合解决哪些问题？</h3><p>能否区分解耦、削峰、异步与事件传播，并识别同步调用更简单可靠的场景？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q07"><h3>消息为何会丢失、重复或乱序？</h3><p>能否解释确认、持久化、重投递、分区和消费位点，并设计容错策略？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q08"><h3>消费者怎样做到幂等？</h3><p>能否利用唯一约束、幂等键、状态机或去重表，处理“至少一次”投递？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q09"><h3>数据库写入与发消息如何保持一致？</h3><p>能否解释本地事务表/Outbox、事务消息与补偿，并说明不存在轻易的“恰好一次”？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m04-q10"><h3>如何监控和恢复积压的消息系统？</h3><p>能否观察延迟、积压、失败率和死信，安全扩容消费者并处理毒消息？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+</ol><h2>本章学习记录</h2><table><thead><tr><th>日期</th><th>问题</th><th>学到的内容与证据</th><th>遗留疑问</th></tr></thead><tbody><tr><td colspan="4">暂无记录。</td></tr></tbody></table>
+</main></body></html>

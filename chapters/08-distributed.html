@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M08 高可用与分布式部署</title><link rel="stylesheet" href="../styles.css"><script src="../difficulty.js" defer></script></head><body><main>
+<nav><a href="07-performance.html">← 上一章</a><a href="../index.html">返回总览</a><a href="09-engineering.html">下一章 →</a></nav>
+<h1>M08 高可用与分布式部署</h1><p class="subtitle">目标：部署可扩展、可观察、可恢复的服务，并理解分布式系统的真实边界。</p>
+<div class="notice"><strong>章节状态：</strong><span class="tag">未开始 · 0/10</span><p class="meta">前置建议：M07</p></div>
+<h2>核心问题</h2><ol class="questions">
+<li class="question" id="m08-q01"><h3>高可用意味着什么，如何量化？</h3><p>能否定义 SLI/SLO、错误预算、RTO/RPO，并区分可用性、可靠性和灾难恢复？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q02"><h3>负载均衡如何分发流量和发现故障？</h3><p>能否解释四层/七层、轮询/最少连接、健康检查、会话粘滞与连接耗尽？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q03"><h3>无状态服务为何更容易水平扩展？</h3><p>能否识别进程内会话、临时文件和本地缓存，并把必要状态放到合适位置？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q04"><h3>容器镜像和运行时应怎样设计？</h3><p>能否构建最小可重复镜像、使用非 root 用户、注入配置并正确处理信号与日志？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q05"><h3>编排系统中的副本、探针与资源限制如何配合？</h3><p>能否区分存活/就绪/启动检查，设置请求与限制，并排查重启和调度失败？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q06"><h3>滚动、蓝绿与金丝雀发布如何选择？</h3><p>能否保证应用与数据兼容、定义自动停止条件，并安全回滚代码和配置？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q07"><h3>日志、指标和调用链各回答什么问题？</h3><p>能否设计结构化日志、关键指标、请求关联和告警，控制基数与存储成本？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q08"><h3>分布式系统中的一致性与可用性如何取舍？</h3><p>能否解释网络分区、复制延迟、最终一致、仲裁与 CAP 的适用边界？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q09"><h3>备份为何不等于可恢复？</h3><p>能否制定备份、校验、异地保存和恢复演练，并用 RTO/RPO 验证方案？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m08-q10"><h3>服务依赖局部故障时如何避免级联失败？</h3><p>能否应用隔离、超时、限流、熔断、降级和容量冗余，并通过演练验证？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+</ol><h2>本章学习记录</h2><table><thead><tr><th>日期</th><th>问题</th><th>学到的内容与证据</th><th>遗留疑问</th></tr></thead><tbody><tr><td colspan="4">暂无记录。</td></tr></tbody></table>
+</main></body></html>

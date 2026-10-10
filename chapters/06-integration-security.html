@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M06 前后端协作与安全</title><link rel="stylesheet" href="../styles.css"><script src="../difficulty.js" defer></script></head><body><main>
+<nav><a href="05-react.html">← 上一章</a><a href="../index.html">返回总览</a><a href="07-performance.html">下一章 →</a></nav>
+<h1>M06 前后端协作与安全</h1><p class="subtitle">目标：建立清晰接口契约，正确处理身份、权限、浏览器边界与不可信输入。</p>
+<div class="notice"><strong>章节状态：</strong><span class="tag">未开始 · 0/10</span><p class="meta">前置建议：M02；结合 M05 效果更佳</p></div>
+<h2>核心问题</h2><ol class="questions">
+<li class="question" id="m06-q01"><h3>前后端如何建立可演进的接口契约？</h3><p>能否统一字段、时间、空值、错误码和分页，并用文档或契约检查减少联调歧义？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q02"><h3>Cookie、Session、Token 和 JWT 应如何选择？</h3><p>能否说明存储、吊销、过期、刷新和攻击面的差异，避免把 JWT 当默认答案？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q03"><h3>认证与授权有什么区别？</h3><p>能否实现登录、密码安全、RBAC/资源级权限，并保证服务端执行每次授权检查？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q04"><h3>同源策略、CORS 与 CSRF 分别解决什么？</h3><p>能否配置跨域、凭据和预检请求，并根据认证方式实施 CSRF 防护？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q05"><h3>XSS、SQL 注入与命令注入如何产生？</h3><p>能否坚持输出编码、参数化查询、最小权限和输入边界，避免依赖黑名单？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q06"><h3>密钥和敏感数据应如何管理？</h3><p>能否区分传输/存储加密、哈希、脱敏、日志泄露与密钥轮换责任？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q07"><h3>上传文件为何是安全边界？</h3><p>能否限制大小和类型、生成安全文件名、隔离存储并防止路径遍历和恶意解析？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q08"><h3>WebSocket、SSE 与轮询如何选择？</h3><p>能否根据通信方向、连接规模、代理环境、重连和顺序要求设计实时功能？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q09"><h3>前后端如何处理超时、取消和重复操作？</h3><p>能否传递截止时间、取消过期请求、禁用重复提交并用服务端幂等兜底？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m06-q10"><h3>怎样排查“前端显示错但后端看似正常”的问题？</h3><p>能否沿浏览器状态、网络请求、网关、服务日志和数据库建立同一请求的证据链？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+</ol><h2>本章学习记录</h2><table><thead><tr><th>日期</th><th>问题</th><th>学到的内容与证据</th><th>遗留疑问</th></tr></thead><tbody><tr><td colspan="4">暂无记录。</td></tr></tbody></table>
+</main></body></html>

@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M03 数据库设计与优化</title><link rel="stylesheet" href="../styles.css"><script src="../difficulty.js" defer></script></head><body><main>
+<nav><a href="02-web-api.html">← 上一章</a><a href="../index.html">返回总览</a><a href="04-middleware.html">下一章 →</a></nav>
+<h1>M03 数据库设计与优化</h1><p class="subtitle">目标：正确建模和访问数据，并用证据而不是猜测优化查询。</p>
+<div class="notice"><strong>章节状态：</strong><span class="tag">未开始 · 0/10</span><p class="meta">前置建议：M01、M02</p></div>
+<h2>核心问题</h2><ol class="questions">
+<li class="question" id="m03-q01"><h3>关系型数据库如何把业务概念映射为表？</h3><p>能否选择主键、外键、约束和数据类型，并用规范化与反规范化解释取舍？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q02"><h3>事务的 ACID 与隔离级别解决什么问题？</h3><p>能否解释脏读、不可重复读、幻读、丢失更新，并选择恰当事务边界？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q03"><h3>数据库锁与 MVCC 如何影响并发？</h3><p>能否分析行锁、表锁、乐观锁、悲观锁、死锁并给出定位与规避方法？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q04"><h3>索引为什么能加速查询，又为何会失效？</h3><p>能否设计联合索引，解释最左匹配、覆盖索引、选择性与写入成本？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q05"><h3>如何读懂查询执行计划？</h3><p>能否用 EXPLAIN 识别全表扫描、错误估算、低效连接和排序，并验证优化效果？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q06"><h3>SQL JOIN、子查询、聚合和窗口函数如何选择？</h3><p>能否写出正确查询，并处理 NULL、重复行、分组语义和大数据量性能？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q07"><h3>ORM 提升了什么，又隐藏了什么？</h3><p>能否识别 N+1、隐式查询、会话生命周期和批量写入问题，必要时使用原生 SQL？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q08"><h3>数据库连接池应如何配置和保护？</h3><p>能否结合服务并发、数据库上限、超时和泄漏分析池大小，而不是盲目调大？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q09"><h3>Schema 迁移如何安全上线和回滚？</h3><p>能否设计向前/向后兼容的扩展—迁移—收缩流程，避免长锁表和数据丢失？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+<li class="question" id="m03-q10"><h3>何时选择 NoSQL、读写分离或分库分表？</h3><p>能否先识别单库优化空间，再说明一致性、查询能力、运维和扩容成本？</p><p class="record"><strong>状态：</strong>未开始　<strong>证据：</strong>暂无</p></li>
+</ol><h2>本章学习记录</h2><table><thead><tr><th>日期</th><th>问题</th><th>学到的内容与证据</th><th>遗留疑问</th></tr></thead><tbody><tr><td colspan="4">暂无记录。</td></tr></tbody></table>
+</main></body></html>
